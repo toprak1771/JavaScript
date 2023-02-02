@@ -28,10 +28,11 @@ function set_background(){
     let bodylist=document.getElementsByTagName("body")[0];
     let pList=bodylist.getElementsByTagName("p");
     console.log(pList);
-    let firstp=pList[0];
+  
+     let firstp=pList[0];
     let secondp=pList[1];
-    firstp.style.background="red";
-    secondp.style.background="blue";
+     firstp.style.background="red";
+     secondp.style.background="blue";
 }
 
 function getAttributes(){
