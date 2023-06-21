@@ -1213,6 +1213,7 @@ let persons = [
 ];
 
 let final_persons = persons.map((person) => {
+  console.log("person:",person);
     Object.keys(person).forEach((item) => {
         if(!item.startsWith("fv")){
             delete person[item]
@@ -1253,6 +1254,16 @@ console.log(animals.slice(2, 4));
 
 console.log(animals.slice(1, 5));
 // Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+let newfilteredData = data.map(i=>{
+  return Object.keys(i)
+}).flat(Infinity);
+
+let newSetData=[...new Set(newfilteredData)];
+
+console.log("newFilteredData:",newfilteredData);
+console.log("newSetData:",newSetData);
+
 
 
 
